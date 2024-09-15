@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Form with Different Input Types</h1>
+
+    <form action="#">
+        <label for="text">Text:</label>
+        <input type="text" id="text" name="text" placeholder="Enter text">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color">
+
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" min="1" max="100" step="1">
+
+        <label for="range">Range:</label>
+        <input type="range" id="range" name="range" min="0" max="100" value="50">
+
+        <label for="checkbox">Checkbox:</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+
+        <label for="radio1">Radio 1:</label>
+        <input type="radio" id="radio1" name="radio" value="option1">
+
+        <label for="radio2">Radio 2:</label>
+        <input type="radio" id="radio2" name="radio" value="option2">
+
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file">
+
+        <label for="tel">Telephone:</label>
+        <input type="tel" id="tel" name="tel" placeholder="Enter phone number">
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
